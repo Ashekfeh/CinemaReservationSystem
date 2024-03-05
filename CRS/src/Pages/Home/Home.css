@@ -1,0 +1,18 @@
+.it {
+    display: flex;
+    justify-content:space-evenly;
+    gap: 30px;
+    height: 100%;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+  
+  .in-theaters {
+    height: auto;
+  }
+  
+  .in-theaters h1 {
+    padding: 10px 0;
+    border-bottom: var(--light-green) solid 1px;
+    background-image: linear-gradient(to right, var(--dark-green), rgba(0, 0, 0, 0));
+  }

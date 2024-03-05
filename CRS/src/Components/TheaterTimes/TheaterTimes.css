@@ -1,0 +1,56 @@
+.available-theaters div {
+    margin-bottom: 10px;
+  }
+  
+  .class-wrapper {
+    display: flex;
+    width: 100%;
+  }
+  
+  .class {
+    display: flex;
+    flex-direction: column;
+    font-size: 35px;
+    margin-left: 10%;
+  
+    width: 50%;
+    color: var(--light-green);
+  }
+  
+  .time-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap:wrap;
+    margin-top: 10px;
+  }
+  
+  .time-wrapper button {
+    width: 100px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0);
+    border: white 1px solid;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  
+  .time-wrapper button:hover {
+    border: 1px solid var(--light-green);
+    color: var(--light-green);
+  }
+  
+  .active {
+    border: 1px solid var(--light-green);
+    color: white;
+  }
+  
+  .select-theater {
+    background-image: linear-gradient(to right, var(--dark-green), rgba(0, 0, 0, 0));
+    padding: 5px 0px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid var(--light-green);
+    margin-top: 20px;
+  }
+  .theater-name {
+    border: none;
+    color: white;
+  }

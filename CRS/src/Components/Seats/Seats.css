@@ -1,0 +1,64 @@
+table, tbody {
+    max-width: 40%;
+    max-height: 300px;
+    table-layout:auto;
+    margin: auto;
+    border-spacing: 20px;
+  
+    text-align: center;
+  }
+  
+  tr {
+    height: 25px;
+    margin: 0;
+  }
+  
+  td {
+    width: 20px;
+  }
+  
+  td:hover {
+    background-color: var(--dark-green);
+  }
+  
+  td:hover .left {
+    background-color: var(--dark-green);
+    border: var(--light-green) 1px solid;
+  }
+  
+  td:hover .right {
+    background-color: var(--dark-green);
+    border: var(--light-green) 1px solid;
+  }
+  
+  .seat {
+    display: table-cell;
+    background-color: var(--light-green);
+    border: var(--light-green) 1px solid;
+    padding: 5px;
+  }
+  
+  .seat.active {
+    background-color: var(--dark-green);
+    border: var(--light-green) 1px solid;
+  }
+  
+  .seat div {
+    height: 15px;
+    width: 8px;
+    background-color: var(--light-green);
+    border: 2px solid var(--dark-green);
+  }
+  
+  .left {
+    position: relative;
+    right: 15px;
+    top: 15px;
+  }
+  
+  .right {
+    position: relative;
+    margin: 0;
+    left: 15px;
+    bottom: 0;
+  }

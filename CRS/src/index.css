@@ -1,0 +1,19 @@
+:root {
+  --light-green: #0FFA6E;
+  --dark-green: #043B1A;
+  background-color: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'dot matrix', 'Roboto';
+  color: white;
+}
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
