@@ -1,2 +1,2 @@
-./venv
-./MovieDB/db.sqlite3
+venv/
+MovieDB/db.sqlite3
