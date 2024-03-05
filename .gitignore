@@ -1,2 +1,3 @@
 venv/
 MovieDB/db.sqlite3
+CRS/node_modules
