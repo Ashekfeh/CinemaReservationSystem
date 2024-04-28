@@ -43,6 +43,12 @@ export default function Details() {
         getDates()
     }, [])
 
+    const [dayBtnState, setdayBtnState] = useState(true)
+
+    function handleClick() {
+        setdayBtnState(dayBtnState => !dayBtnState);
+    }
+
     useEffect(() => {
         const fetchMovieData = async () => {
             const result = await fetch(movie_url)
@@ -71,7 +77,7 @@ export default function Details() {
                             const today = new Date()
                             return (
                                 <SwiperSlide key={index}>
-                                    <div className="date">
+                                    <div onClick={handleClick} className={`date ${dayBtnState?"active":""}`}>
                                         <h3>{item.getDate() == today.getDate() && item.getMonth() == today.getMonth() ? "Today" : `${item.toLocaleString('default', { month: 'long' })} ${item.getDate()}`}</h3>
                                     </div></SwiperSlide>
                             )

@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import './TheaterTimes.css';
 
 export default function TheaterTimes() {
+
+    const [activeState, setActiveState] = useState(true)
+
+    function handleClick() {
+        setActiveState(activeState => !activeState);
+
+    }
+
     return (
         <div id="available-theaters" className="available-theaters">
 
@@ -10,7 +18,7 @@ export default function TheaterTimes() {
                             <div className="class-wrapper"><div className="class">
                                 Gold Class
                                 <div className="time-wrapper">
-                                    <button className="time">22:00</button>
+                                    <button className={`time ${activeState?"active":""}`} onClick={handleClick}>22:00</button>
                                     <button className="time">00:00</button>
                                     <button className="time">15:00</button>
                                     <button className="time">19:00</button>

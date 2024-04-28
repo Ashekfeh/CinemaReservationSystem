@@ -1,0 +1,11 @@
+[
+  {
+    "applyTo": "index.html",
+    "headers": [
+      {
+        "name": "www-authenticate",
+        "value": "Token"
+      }
+    ]
+  }
+]
